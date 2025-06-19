@@ -12,7 +12,7 @@ application:
   public_path:
     - /
   routes:
-    - /=http://host.lzcapp:9330/display
+    - /=http://roon-server.lazycat.community.app.roon-server.lzcapp:9330/display
   depends_on:
     - roon-server
 services:
