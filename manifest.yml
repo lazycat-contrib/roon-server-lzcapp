@@ -7,16 +7,14 @@ homepage: https://roon.app/zh-Hans/
 author: roon
 application:
   subdomain: roon-server
-  background_task: trues
+  background_task: true
   multi_instance: true
   public_path:
     - /
   routes:
-    - /=file:///lzcapp/pkg/content
+    - /=http://host.lzcapp:9330/display
   depends_on:
     - roon-server
-
-
 services:
   roon-server:
     image: docker.1ms.run/czyt/roon-server:v2.47.1510
