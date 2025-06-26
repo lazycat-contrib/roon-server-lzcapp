@@ -6,25 +6,25 @@ description: 关于音乐的一切--浏览、发现、收集和聆听--在Roon�
 homepage: https://roon.app/zh-Hans/
 author: roon
 application:
-  subdomain: roon-server
-  background_task: true
-  multi_instance: true
-  public_path:
-    - /
-  routes:
-    - /=http://roon-server.lazycat.community.app.roon-server.lzcapp:9330/display
-  depends_on:
-    - roon-server
+    subdomain: roon-server
+    background_task: true
+    multi_instance: true
+    public_path:
+        - /
+    routes:
+        - /=http://roon-server.lazycat.community.app.roon-server.lzcapp:9330/display
+    depends_on:
+        - roon-server
 services:
-  roon-server:
-    image: docker.1ms.run/czyt/roon-server:v2.47.1510
-    user: root
-    binds:
-      - /lzcapp/run/mnt/home/music:/music
-      - /lzcapp/var/data:/data
-      - /lzcapp/var/backup:/backup
-    net_admin: true
-    network_mode: host
+    roon-server:
+        image: docker.1ms.run/czyt/roon-server:v2.47.1510
+        user: root
+        binds:
+            - /lzcapp/run/mnt/home/music:/music
+            - /lzcapp/var/data:/var/roon
+            - /lzcapp/var/backup:/backup
+        net_admin: true
+        network_mode: host
 ext_config:
-  enable_document_access: true
-  enable_media_access: true
+    enable_document_access: true
+    enable_media_access: true
