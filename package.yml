@@ -1,0 +1,15 @@
+package: lazycat.community.app.roon-server
+version: 2.47.1510
+name: RoonServer
+description: "关于音乐的一切--浏览、发现、收集和聆听--在Roon的帮助下，参与度提高了10倍。"
+homepage: https://roon.app/zh-Hans/
+author: roon
+min_os_version: 1.5.0
+
+locales:
+  zh:
+    name: "Roon音乐服务器"
+    description: "关于音乐的一切--浏览、发现、收集和聆听--在Roon的帮助下，参与度提高了10倍。"
+  en:
+    name: "Roon Server"
+    description: "Everything about music - browse, discover, collect and listen - with Roon, engagement increases 10x."
