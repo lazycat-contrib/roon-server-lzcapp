@@ -1,4 +1,4 @@
-package: lazycat.community.app.roon-server
+package: community.lazycat.app.roon-server
 version: 2.65.1653
 name: RoonServer
 description: "关于音乐的一切--浏览、发现、收集和聆听--在Roon的帮助下，参与度提高了10倍。"
