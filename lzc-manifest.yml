@@ -12,7 +12,7 @@ application:
 
 services:
   roon-server:
-    image: docker.1ms.run/czyt/roon-server:v2.47.1510
+    image: docker.1ms.run/czyt/roon-server:v2.65.1653
     user: root
     binds:
       - /lzcapp/run/mnt/home/music:/music
