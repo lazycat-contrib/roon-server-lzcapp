@@ -6,7 +6,7 @@ application:
     - /
   upstreams:
     - location: /
-      backend: http://host.lzcapp:9330/display
+      backend: http://roon-server.community.lazycat.app.roon-server.lzcapp:9330/display
   depends_on:
     - roon-server
 
