@@ -2,13 +2,16 @@ application:
   subdomain: roon-server
   background_task: true
   multi_instance: true
+  entries:
+    - id: main
+      title: "Web Display"
+      path: /
+
   public_path:
     - /
   upstreams:
     - location: /
       backend: http://roon-server.community.lazycat.app.roon-server.lzcapp:9330/display
-  depends_on:
-    - roon-server
 
 services:
   roon-server:
@@ -18,7 +21,6 @@ services:
       - /lzcapp/run/mnt/home/music:/music
       - /lzcapp/var/data:/var/roon
       - /lzcapp/var/backup:/backup
-    net_admin: true
     network_mode: host
 
 ext_config:
